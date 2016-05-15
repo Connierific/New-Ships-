@@ -1,0 +1,125 @@
+name: Carrack
+
+maxSize: 15000
+minSize: 5000
+allowedBlocks:
+    # Same as longboat
+    - 5     # planks
+    - 17    # logs
+    - 26    # Bed.  Parties often use their landing sites as bases.
+    - 30    # cobweb
+    - 34    # Piston head (required for storage crates)
+    - 35    # wool
+    - 44    # some stone and wooden slabs.  Can be used as armour.
+    - 50    # torch
+#    - 51    # Fire, or else burning ships are immobilised.
+    - 53    # oak stairs
+    - 54    # chest
+    - 58    # crafting table
+    - 63    # sign
+    - 64    # oak door
+    - 65    # ladder
+    - 68    # also a sign
+    - 69    # lever
+    - 85    # oak fence
+    - 89    # glowstone
+    - 92    # cake
+    - 96    # wooden trapdoor
+    - 107   # oak fence gates
+    - 125   # double oak slabs
+    - 126   # wooden slabs
+    - 127   # cocoa
+    - 134   # spruce stairs
+    - 135   # birch stairs
+    - 136   # jungle wood stairs
+    - 143   # wooden button
+    - 144   # mob head
+    - 162   # New logs
+    - 163   # Acacia stairs
+    - 164   # Dark oak stairs
+    - 171   # carpet
+    - 176   # banner
+    - 177   # banner v2
+    - 183   # 183-192 are fences
+    - 184
+    - 185
+    - 186
+    - 187
+    - 188
+    - 189
+    - 190
+    - 191
+    - 192
+    - 193   # Doors
+    - 194
+    - 195
+    - 196
+    - 197
+    # More decorations
+    - 95    # Glass
+    - 101   # Iron bars
+    - 102   # Glass pane
+    - 139   # Stone walls
+    - 159   # Stained clay
+    - 160   # Stained glass panes
+    - 171   # carpet
+    # Redstone devices
+    - 27
+    - 28
+    - 29
+    - 34
+    - 46    # TNT!
+    - 55
+    - 69
+    - 70
+    - 71
+    - 72
+    - 75
+    - 76
+    - 77
+    - 93
+    - 94
+    - 131
+    - 143
+    - 146
+    - 149
+    - 150
+    - 151
+    - 152
+    - 154
+    - 157
+    - 158
+    - 178
+    # Cannons
+    - 42    # Iron block
+    - 108   # Brick stairs
+
+# It's a boat
+canFly: false
+requireWaterContact: true
+allowVerticalMovement: false
+tryNudge: false
+
+# Movement settings - The carrack's sails let it move quickly over open water, but it isn't very maneuverable.
+speed: 4
+canCruise: true
+cruiseSpeed: 5
+cruiseSkipBlocks: 0
+canStaticMove: true
+maxStaticMove: 2
+
+# Sinking settings
+sinkPercent: 50.00
+overallSinkPercent: 50.00
+keepMovingOnSink: true
+
+# Building requirements
+minHeightLimit: 52
+maxHeightLimit: 100
+flyblocks:
+    [5,17,53,85,125,126,134,135,136,162,163,188,189,190,191,192,35]:    # Hull
+        - 60.0
+        - 100.0
+   [57,41,133]:    #Reactro 
+forbiddenBlocks:
+    - -1
